@@ -24,7 +24,8 @@
   margin-top: 10px;
 }
 .nav ul li {
-  transition: 0.6s;
+  transition: 0.4s;
+  position: relative;
 }
 .nav ul li:hover {
   text-decoration: underline limegreen;
@@ -32,10 +33,10 @@
   cursor: pointer;
 }
 
-.nav .logo {
-  margin-top: 10px;
-  font-weight: bolder;
-  font-size: 20px;
+.nav img {
+  /* margin-top: 10px; */
+  width: 120px;
+  height: auto;
 }
 .request-btn {
   background: linear-gradient(
@@ -53,6 +54,11 @@
 }
 .request-btn:hover {
   cursor: pointer;
+  background: linear-gradient(
+    117deg,
+    hsl(136, 30%, 64%) 0%,
+    hsl(192, 40%, 74%) 100%
+  );
 }
 /* section1 */
 .sec1 {
@@ -63,6 +69,9 @@
 .sec1 img {
   width: 50%;
 }
+.sec1-right {
+  background-image: url(images/bg-intro-desktop.svg);
+}
 .sec1-left {
   width: 30%;
   margin: auto;
@@ -70,7 +79,8 @@
   height: 50%;
 }
 .sec1-heading,
-.sec2-heading {
+.sec2-heading,
+.sec3-heading {
   font-size: 30px;
   padding: 20px 0;
 }
@@ -106,4 +116,85 @@
 .box1-heading {
   font-size: 25px;
   margin-bottom: 10px;
+}
+/* section3 */
+.sec3 {
+  padding: 0px 115px 90px 115px;
+  background-color: white;
+}
+/* .sec3-heading {
+  margin: auto 0;
+} */
+.article-content {
+  display: flex;
+  gap: 30px;
+}
+.article-content img {
+  height: 200px;
+  width: 100%;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+.article1 {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: hsl(220, 50%, 98%);
+}
+.sec3 .by {
+  font-size: 10px;
+}
+.sec3 .article-topic {
+  font-size: 17px;
+  margin: 10px 0;
+  font-weight: 500;
+}
+.sec3 .article-topic:hover {
+  color: hsl(136, 65%, 51%);
+  cursor: pointer;
+}
+.sec3 .article-detail {
+  font-size: 15px;
+  font-weight: 10;
+}
+/* footer */
+footer {
+  background-color: hsl(233, 26%, 24%);
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+  color: white;
+}
+footer ul {
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+footer ul li {
+  padding: 7px;
+}
+footer ul li:hover {
+  color: limegreen;
+  cursor: pointer;
+}
+.footer-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.footer-1 .social {
+  /* padding: 5px; */
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+.footer-1 .social img:hover {
+  background-color: limegreen;
+  cursor: pointer;
+}
+.footer-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
